@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rincón del Friki</title>
+    <!-- Importar MaterializeCSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Estilo personalizado -->
+    <style>
+        body {
+            background-color: #89789a; /* Tonos morados */
+        }
+        .realencabezado{
+            display: flex; /* Permite alinear los elementos horizontalmente */
+            align-items: center; /* Centra los elementos verticalmente */
+            gap: 20px; /* Espacio entre la imagen y el texto */
+            background-color: #562589; /* Fondo morado oscuro */
+            color: aliceblue; /* Color claro para texto */
+            padding: 10px; /* Espaciado interno */
+            justify-content: center;
+
+        }
+        .encabezado {
+            background-color: #562589; /* Morado oscuro */
+            color: white;
+            font-family: monospace; 
+        }
+        .encabezado h1 {
+            font-size: 4rem; /* Ajusta el tamaño del texto */
+            margin: 0%; /* Reduce los márgenes superiores e inferiores */
+            
+        }
+        .pie {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+            padding: 10;
+        }
+        .carousel {
+            height: 700px; /* Altura del carrusel */
+        }
+        .carousel .carousel-item img {
+            height: 100%; /* Imagen ocupa toda la altura del carrusel */
+            width: 1500px; /* Mantiene la proporción */
+        }
+        .card-content {
+            background-color: #483D8B;
+            color: white;
+        }
+
+        .card {
+            background-color: #483D8B;
+            transition: transform 0.3s ease; /* Agrega una transición suave */
+            margin-top: 20px;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Escala la tarjeta en un 10% más grande */
+        }
+        h1 {
+            text-align: left; /* Alinea el titulo a la derecha */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Sección 1: Encabezado -->
+    <header class="encabezado center-align">
+        <div class="realencabezado">
+            <img src="icon/gameboy-video-game-games-device-svgrepo-com.svg" width="80px" alt="Logo">
+            <h1>Rincón del Friki</h1>
+        </div>
+        <!-- Barra de navegación -->
+        <nav>
+            <div class="nav-wrapper #5e35b1 deep-purple darken-1">
+                <ul id="nav-mobile" class="center">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="consola.html">Consolas</a></li>
+                    <li><a href="series.html">Series</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Carrusel de imágenes -->
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one"><img src="img/imagen1_1.avif" alt="Imagen 1"></a>
+            <a class="carousel-item" href="#two"><img src="img/imagen1_2.avif" alt="Imagen 2"></a>
+            <a class="carousel-item" href="#three"><img src="img/imagen1_3.avif" alt="Imagen 3"></a>
+            <a class="carousel-item" href="#four"><img src="img/imagen1_4.avif" alt="Imagen 4"></a>
+        </div>
+    </header>
+
+    <!-- Sección 2: Cuerpo -->
+    <main class="container">
+        <div class="row">
+            <!-- Image Cards -->
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/imagen1.jpg" alt="Juego 1" height="500">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">World of Warcraft</span>
+                        <p>World of Warcraft (abreviado como WoW, literalmente en español Mundo de Warcraft) es un videojuego de rol multijugador masivo en línea desarrollado por Blizzard Entertainment.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://worldofwarcraft.blizzard.com/es-es/">Link al juego</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/img_card/juego2.webp" alt="Juego 2" height="500">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Death Stranding</span>
+                        <p>Death Stranding es un videojuego de acción y exploración en mundo abierto desarrollado por Kojima Productions y publicado por Sony Interactive Entertainment para PlayStation 4 y por 505 Games para Microsoft Windows.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.playstation.com/es-cl/games/death-stranding/">Link al juego</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/img_card/juego3.jpg" alt="Juego 3" height="500">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Baldur's Gate 3</span>
+                        <p>Baldur's Gate III es un videojuego de rol desarrollado por Larian Studios. Representa la tercera entrega principal de la serie Baldur's Gate, basada en el sistema de juego de rol de mesa Dungeons & Dragons.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/">Link al juego</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/img_card/juego4.avif" alt="Juego 4" height="500">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Monster Hunter Wilds</span>
+                        <p>Monster Hunter Wilds es un videojuego de rol de acción desarrollado y distribuido por Capcom. Es parte de la franquicia Monster Hunter y sucesor de Monster Hunter Rise (2021).</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.monsterhunter.com/wilds/es/">Link al juego</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/img_card/juego5.jpg" alt="Juego 5" height="500">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Hollow Knight: Silksong</span>
+                        <p>Hollow Knight: Silksong es un futuro videojuego metroidvania que está siendo desarrollado por el estudio independiente australiano Team Cherry. Es la secuela del videojuego de 2017 Hollow Knight.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://i.blogs.es/fcc285/silksong-meme/840_560.jpeg">Link al juego</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/img_card/juego6.jpg" alt="Juego 6" height="500">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Persona 5 Royal</span>
+                        <p>Persona 5 es un videojuego de rol desarrollado por Atlus para la consola PlayStation 4. Cronológicamente se trata del sexto videojuego de la saga Persona, que forma parte de la franquicia Megami Tensei.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://persona.atlus.com/p5r/">Link al juego</a>
+                    </div>
+                </div>
+            </div>
+           
+    </main>
+
+    <!-- Sección 3: Pie -->
+    <footer class="pie">
+        <p>&copy; 2025 Rincón del Friki. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Importar JavaScript de Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elems = document.querySelectorAll('.carousel');
+            const instances = M.Carousel.init(elems, {
+                fullWidth: true, /* Asegura que solo se vea una imagen a la vez */
+                indicators: true, /* Activa indicadores de navegación */
+                duration: 1300, /*   */
+            });
+            setInterval(() => {
+            instances[0].next(); // Cambia a la siguiente imagen
+        }, 9000); // Intervalo en milisegundos
+        });
+    </script>
+
+</body>
+</html>
